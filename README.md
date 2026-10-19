@@ -361,25 +361,8 @@ This minimum sample-size rule makes the comparison more stable than ranking ever
 - Repeated app names exist in the source; a separate unique-app view was used for app-level rankings.
 - Correlation does not imply causation.
 - Average review counts can be skewed by a small number of highly popular apps.
-- Sentiment analysis was intentionally excluded.
+- Sentiment analysis was excluded due to data limitations.
 - The data contains one last-update date per app, not a full update history.
-
-## Repository Contents
-
-Suggested repository structure:
-
-```text
-app_insights_tableau/
-├── README.md
-├── googleplaystore(2).csv
-├── googleplaystore_user_reviews.csv
-├── notebooks/
-│   └── Google_Play_Store_EDA.ipynb
-└── dashboard/
-    └── dashboard screenshots or exported files
-```
-
-Adjust the filenames and folders above to match the files actually committed to the repository.
 
 ## Tools and Skills Demonstrated
 
