@@ -367,12 +367,3 @@ print(genre_ratings.sort_values("mean").head(15))
 5. Free apps have much higher average review counts, while paid apps have a slightly higher average rating; neither comparison proves causation.
 6. Category and genre averages should be considered alongside sample sizes.
 7. One last-update date per app cannot establish update frequency or seasonality.
-
-## Limitations
-
-- The dataset is historical, not a live view of Google Play Store.
-- Install counts are recorded in tiers and are not exact active-user counts.
-- Missing ratings and sizes reduce the observations available for some analyses.
-- The dataset has one last-update date per app, not a complete update history.
-- For Medium Questions 3 and 5, the code adds the exact paid-only price analysis and the correct count of apps over one million installs by genre. Run those cells to get exact values from your cleaned notebook data.
-- Sentiment analysis is intentionally excluded.
