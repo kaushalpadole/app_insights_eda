@@ -189,6 +189,20 @@ A total of 6,934 apps in the cleaned dataset were last updated in 2018. July has
 
 The dataset contains only one last-update date per app and has no records for September–December 2018. Therefore, it cannot establish the average time between successive updates or confirm a recurring seasonal update pattern.
 
+## Challenges Faced
+
+1. High number of duplicate rows: The source contained 1,025 rows, of which 723 were flagged as duplicates. Removing repeated rows left 302 rows. Without patient IDs or source provenance, it was not possible to confirm whether identical rows represented repeated records for the same person.
+
+2. Unexpected category codes: The data contained ca = 4 even though the brief described a 0–3 range, and thal = 0 even though the brief listed categories 1–3. These values were retained and flagged for investigation rather than silently changed.
+
+3. Comparing groups of different sizes: Stacked bar charts show raw counts, but categories have unequal sample sizes. Within-group percentages are needed for fairer comparisons of proportions.
+
+4. Interpreting correlations: Some variables are encoded categories. Their numeric correlations are exploratory summaries and can be misleading if interpreted as continuous clinical measurements.
+
+5. Limited model evaluation: Logistic regression was evaluated on a single 61-record test set. A single split provides only a limited estimate of generalization performance.
+
+6. Unavailable survival information: The dataset has no survival status, mortality outcome, or follow-up time, so the requested survival-rate analysis could not be performed.
+
 ## Business Insights and Recommendations
 
 1. **Use multiple success metrics.** Ratings and installs measure different aspects of app performance. Track user satisfaction alongside installs and review volume rather than treating popularity as a proxy for quality.
@@ -218,6 +232,7 @@ The dataset contains only one last-update date per app and has no records for Se
 - Data quality checks and missing-value handling
 - Descriptive statistics and category-level comparisons
 - Business insight development and analytical communication
+- GitHub for project documentation and version control
 
 ## References
 
